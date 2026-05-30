@@ -46,6 +46,14 @@ config LED_FADE_DURATION
 
 endif # ADVANCED_LED_SETTINGS
 
+config APP_HEARTBEAT_PERIOD_MS
+    int "Heartbeat LED blink period (ms)"
+    default 500
+    range 100 2000
+    help
+      The sleep duration between LED toggles for the heartbeat app.
+      
+
 endif # LED_SUBSYSTEM
 
 
